@@ -43,6 +43,8 @@ class FocusViewController: UIViewController {
         // Layout
         collectionView.collectionViewLayout = layout()
         
+        collectionView.delegate = self
+        
         updateButtonTitle()
     }
     
@@ -78,5 +80,13 @@ class FocusViewController: UIViewController {
         datasource.apply(snapshot)
         
         updateButtonTitle()
+    }
+}
+
+extension FocusViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let item = items[indexPath.item]
+        
+        print(">>> \(item.title)")
     }
 }
