@@ -65,6 +65,8 @@ class QuickFocusListViewController: UIViewController {
 //        Layout
         collectionView.collectionViewLayout = layout()
         
+        self.navigationItem.largeTitleDisplayMode = .never
+        
         
     }
 
