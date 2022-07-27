@@ -88,5 +88,10 @@ extension FocusViewController: UICollectionViewDelegate {
         let item = items[indexPath.item]
         
         print(">>> \(item.title)")
+        
+        let storyboard = UIStoryboard(name: "QuickFocus", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "QuickFocusListViewController") as! QuickFocusListViewController
+        
+        present(vc, animated: true)
     }
 }
