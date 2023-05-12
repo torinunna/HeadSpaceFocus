@@ -9,6 +9,11 @@ import UIKit
 
 class FocusViewController: UIViewController {
     
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var refreshButton: UIButton!
+    
+    var curated: Bool = false
+    
     var items: [Focus] = Focus.list
     
     typealias Item = Focus
@@ -17,11 +22,11 @@ class FocusViewController: UIViewController {
     }
     
     var datasource: UICollectionViewDiffableDataSource<Section, Item>!
-
-    @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        refreshButton.layer.cornerRadius = 10
 
         datasource = UICollectionViewDiffableDataSource<Section, Item>(collectionView: collectionView, cellProvider: { collectionView, indexPath, item in
             
@@ -38,6 +43,26 @@ class FocusViewController: UIViewController {
         datasource.apply(snapshot)
         
         collectionView.collectionViewLayout = layout()
+        
+        updateButtonTitle()
+    }
+
+    func updateButtonTitle() {
+        let title = curated ? "View All" : "View Recommendations"
+        refreshButton.setTitle(title, for: .normal)
+    }
+    
+    @IBAction func refreshBtnPressed(_ sender: UIButton) {
+        curated.toggle()
+        
+        self.items = curated ? Focus.recommendations : Focus.list
+        
+        var snapshot = NSDiffableDataSourceSnapshot<Section, Item>()
+        snapshot.appendSections([.main])
+        snapshot.appendItems(items, toSection: .main)
+        datasource.apply(snapshot)
+        
+        updateButtonTitle()
     }
     
     private func layout() -> UICollectionViewCompositionalLayout {

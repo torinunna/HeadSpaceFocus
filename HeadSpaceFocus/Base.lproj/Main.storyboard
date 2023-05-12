@@ -77,10 +77,28 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6q-Br-zME">
+                                <rect key="frame" x="50" y="802" width="314" height="60"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="nGy-IF-sgK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="View All">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="refreshBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Se-XL-O6M"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="N6q-Br-zME" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Apr-uH-T7d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="N6q-Br-zME" secondAttribute="bottom" id="DXp-Rk-3W4"/>
+                            <constraint firstItem="N6q-Br-zME" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="S2z-7P-ESZ"/>
                             <constraint firstItem="sgd-7e-M3M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Z02-hJ-RQY"/>
                             <constraint firstItem="sgd-7e-M3M" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="aR8-RX-HQ4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sgd-7e-M3M" secondAttribute="trailing" id="glU-Ep-C0Z"/>
@@ -89,6 +107,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="sgd-7e-M3M" id="8OA-2J-PKP"/>
+                        <outlet property="refreshButton" destination="N6q-Br-zME" id="RdY-K0-pK2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -100,6 +119,9 @@
         <image name="sparkles" catalog="system" width="112" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
