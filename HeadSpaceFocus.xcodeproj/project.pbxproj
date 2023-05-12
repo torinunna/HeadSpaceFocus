@@ -14,6 +14,7 @@
 		8607C6B52A0E15DA00BDB9E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8607C6B32A0E15DA00BDB9E3 /* LaunchScreen.storyboard */; };
 		8607C6BD2A0E161D00BDB9E3 /* FocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8607C6BC2A0E161D00BDB9E3 /* FocusViewController.swift */; };
 		8607C6BF2A0E167600BDB9E3 /* Focus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8607C6BE2A0E167600BDB9E3 /* Focus.swift */; };
+		8607C6C12A0E1A2D00BDB9E3 /* FocusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8607C6C02A0E1A2D00BDB9E3 /* FocusCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8607C6B62A0E15DA00BDB9E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8607C6BC2A0E161D00BDB9E3 /* FocusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusViewController.swift; sourceTree = "<group>"; };
 		8607C6BE2A0E167600BDB9E3 /* Focus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Focus.swift; sourceTree = "<group>"; };
+		8607C6C02A0E1A2D00BDB9E3 /* FocusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				8607C6AA2A0E15D900BDB9E3 /* SceneDelegate.swift */,
 				8607C6BE2A0E167600BDB9E3 /* Focus.swift */,
 				8607C6BC2A0E161D00BDB9E3 /* FocusViewController.swift */,
+				8607C6C02A0E1A2D00BDB9E3 /* FocusCell.swift */,
 				8607C6AE2A0E15D900BDB9E3 /* Main.storyboard */,
 				8607C6B12A0E15DA00BDB9E3 /* Assets.xcassets */,
 				8607C6B32A0E15DA00BDB9E3 /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			files = (
 				8607C6A92A0E15D900BDB9E3 /* AppDelegate.swift in Sources */,
 				8607C6BD2A0E161D00BDB9E3 /* FocusViewController.swift in Sources */,
+				8607C6C12A0E1A2D00BDB9E3 /* FocusCell.swift in Sources */,
 				8607C6BF2A0E167600BDB9E3 /* Focus.swift in Sources */,
 				8607C6AB2A0E15D900BDB9E3 /* SceneDelegate.swift in Sources */,
 			);
