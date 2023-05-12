@@ -12,6 +12,7 @@
 		8607C6B02A0E15D900BDB9E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8607C6AE2A0E15D900BDB9E3 /* Main.storyboard */; };
 		8607C6B22A0E15DA00BDB9E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8607C6B12A0E15DA00BDB9E3 /* Assets.xcassets */; };
 		8607C6B52A0E15DA00BDB9E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8607C6B32A0E15DA00BDB9E3 /* LaunchScreen.storyboard */; };
+		8607C6BD2A0E161D00BDB9E3 /* FocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8607C6BC2A0E161D00BDB9E3 /* FocusViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		8607C6B12A0E15DA00BDB9E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8607C6B42A0E15DA00BDB9E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8607C6B62A0E15DA00BDB9E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8607C6BC2A0E161D00BDB9E3 /* FocusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				8607C6A82A0E15D900BDB9E3 /* AppDelegate.swift */,
 				8607C6AA2A0E15D900BDB9E3 /* SceneDelegate.swift */,
 				8607C6AE2A0E15D900BDB9E3 /* Main.storyboard */,
+				8607C6BC2A0E161D00BDB9E3 /* FocusViewController.swift */,
 				8607C6B12A0E15DA00BDB9E3 /* Assets.xcassets */,
 				8607C6B32A0E15DA00BDB9E3 /* LaunchScreen.storyboard */,
 				8607C6B62A0E15DA00BDB9E3 /* Info.plist */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8607C6A92A0E15D900BDB9E3 /* AppDelegate.swift in Sources */,
+				8607C6BD2A0E161D00BDB9E3 /* FocusViewController.swift in Sources */,
 				8607C6AB2A0E15D900BDB9E3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
