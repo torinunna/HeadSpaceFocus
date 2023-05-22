@@ -15,6 +15,7 @@
 		8607C6BD2A0E161D00BDB9E3 /* FocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8607C6BC2A0E161D00BDB9E3 /* FocusViewController.swift */; };
 		8607C6BF2A0E167600BDB9E3 /* Focus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8607C6BE2A0E167600BDB9E3 /* Focus.swift */; };
 		8607C6C12A0E1A2D00BDB9E3 /* FocusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8607C6C02A0E1A2D00BDB9E3 /* FocusCell.swift */; };
+		86106E9A2A1B642D00E14BB9 /* QuickFocus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86106E992A1B642D00E14BB9 /* QuickFocus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		8607C6BC2A0E161D00BDB9E3 /* FocusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusViewController.swift; sourceTree = "<group>"; };
 		8607C6BE2A0E167600BDB9E3 /* Focus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Focus.swift; sourceTree = "<group>"; };
 		8607C6C02A0E1A2D00BDB9E3 /* FocusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusCell.swift; sourceTree = "<group>"; };
+		86106E992A1B642D00E14BB9 /* QuickFocus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickFocus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				8607C6A82A0E15D900BDB9E3 /* AppDelegate.swift */,
 				8607C6AA2A0E15D900BDB9E3 /* SceneDelegate.swift */,
 				8607C6BE2A0E167600BDB9E3 /* Focus.swift */,
+				86106E992A1B642D00E14BB9 /* QuickFocus.swift */,
 				8607C6BC2A0E161D00BDB9E3 /* FocusViewController.swift */,
 				8607C6C02A0E1A2D00BDB9E3 /* FocusCell.swift */,
 				8607C6AE2A0E15D900BDB9E3 /* Main.storyboard */,
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86106E9A2A1B642D00E14BB9 /* QuickFocus.swift in Sources */,
 				8607C6A92A0E15D900BDB9E3 /* AppDelegate.swift in Sources */,
 				8607C6BD2A0E161D00BDB9E3 /* FocusViewController.swift in Sources */,
 				8607C6C12A0E1A2D00BDB9E3 /* FocusCell.swift in Sources */,
