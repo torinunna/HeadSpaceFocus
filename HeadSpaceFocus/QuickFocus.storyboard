@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,13 +16,77 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sue-a6-5VG">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SYn-Nx-zqg">
+                                    <size key="itemSize" width="201" height="327"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="1SW-8W-cjK">
+                                        <rect key="frame" x="0.0" y="0.0" width="201" height="327"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="l80-br-hId">
+                                            <rect key="frame" x="0.0" y="0.0" width="201" height="327"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hB1-Hl-dn3">
+                                                    <rect key="frame" x="0.0" y="0.0" width="201" height="134"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="hB1-Hl-dn3" secondAttribute="height" multiplier="3:2" id="7EH-UL-Hs4"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Walking in the city, London's Green Space" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tg3-wI-Dq7">
+                                                    <rect key="frame" x="0.0" y="149" width="201" height="43"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tune out the hustle and bustle of a busy enviroment to feel more connected to your body" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8R-gx-5gS">
+                                                    <rect key="frame" x="0.0" y="207" width="201" height="81.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="k8R-gx-5gS" firstAttribute="centerX" secondItem="l80-br-hId" secondAttribute="centerX" id="752-a1-Gxm"/>
+                                                <constraint firstItem="tg3-wI-Dq7" firstAttribute="top" secondItem="hB1-Hl-dn3" secondAttribute="bottom" constant="15" id="9fe-pe-UoH"/>
+                                                <constraint firstItem="tg3-wI-Dq7" firstAttribute="centerX" secondItem="l80-br-hId" secondAttribute="centerX" id="FY1-3A-pIx"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="k8R-gx-5gS" secondAttribute="bottom" constant="10" id="L3U-L1-mas"/>
+                                                <constraint firstItem="hB1-Hl-dn3" firstAttribute="top" secondItem="l80-br-hId" secondAttribute="top" id="ND0-D4-wYN"/>
+                                                <constraint firstItem="k8R-gx-5gS" firstAttribute="top" secondItem="tg3-wI-Dq7" secondAttribute="bottom" constant="15" id="Q5t-Sb-OdW"/>
+                                                <constraint firstItem="k8R-gx-5gS" firstAttribute="leading" secondItem="l80-br-hId" secondAttribute="leading" id="jbA-wR-dp1"/>
+                                                <constraint firstAttribute="trailing" secondItem="hB1-Hl-dn3" secondAttribute="trailing" id="q2L-xh-Yr6"/>
+                                                <constraint firstItem="hB1-Hl-dn3" firstAttribute="leading" secondItem="l80-br-hId" secondAttribute="leading" id="qVX-9o-Wn7"/>
+                                                <constraint firstItem="tg3-wI-Dq7" firstAttribute="leading" secondItem="l80-br-hId" secondAttribute="leading" id="rru-TD-1Fb"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="201" height="327"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="sue-a6-5VG" secondAttribute="trailing" id="Ds9-zG-ywk"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="sue-a6-5VG" secondAttribute="bottom" id="VsL-50-3Lc"/>
+                            <constraint firstItem="sue-a6-5VG" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="fPo-Qr-N6E"/>
+                            <constraint firstItem="sue-a6-5VG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="zJ1-0P-do8"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="sue-a6-5VG" id="Yjr-KC-up0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="72"/>
+            <point key="canvasLocation" x="18.840579710144929" y="71.651785714285708"/>
         </scene>
     </scenes>
     <resources>
