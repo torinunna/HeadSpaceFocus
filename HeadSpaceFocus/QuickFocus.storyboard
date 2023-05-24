@@ -40,14 +40,14 @@
                                                         <constraint firstAttribute="width" secondItem="hB1-Hl-dn3" secondAttribute="height" multiplier="3:2" id="7EH-UL-Hs4"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Walking in the city, London's Green Space" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tg3-wI-Dq7">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Walking in the city, London's Green Space" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tg3-wI-Dq7">
                                                     <rect key="frame" x="0.0" y="149" width="201" height="43"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tune out the hustle and bustle of a busy enviroment to feel more connected to your body" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8R-gx-5gS">
-                                                    <rect key="frame" x="0.0" y="207" width="201" height="81.5"/>
+                                                    <rect key="frame" x="0.0" y="202" width="201" height="81.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -59,7 +59,7 @@
                                                 <constraint firstItem="tg3-wI-Dq7" firstAttribute="centerX" secondItem="l80-br-hId" secondAttribute="centerX" id="FY1-3A-pIx"/>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="k8R-gx-5gS" secondAttribute="bottom" constant="10" id="L3U-L1-mas"/>
                                                 <constraint firstItem="hB1-Hl-dn3" firstAttribute="top" secondItem="l80-br-hId" secondAttribute="top" id="ND0-D4-wYN"/>
-                                                <constraint firstItem="k8R-gx-5gS" firstAttribute="top" secondItem="tg3-wI-Dq7" secondAttribute="bottom" constant="15" id="Q5t-Sb-OdW"/>
+                                                <constraint firstItem="k8R-gx-5gS" firstAttribute="top" secondItem="tg3-wI-Dq7" secondAttribute="bottom" constant="10" id="Q5t-Sb-OdW"/>
                                                 <constraint firstItem="k8R-gx-5gS" firstAttribute="leading" secondItem="l80-br-hId" secondAttribute="leading" id="jbA-wR-dp1"/>
                                                 <constraint firstAttribute="trailing" secondItem="hB1-Hl-dn3" secondAttribute="trailing" id="q2L-xh-Yr6"/>
                                                 <constraint firstItem="hB1-Hl-dn3" firstAttribute="leading" secondItem="l80-br-hId" secondAttribute="leading" id="qVX-9o-Wn7"/>
