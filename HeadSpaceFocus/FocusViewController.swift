@@ -44,6 +44,8 @@ class FocusViewController: UIViewController {
         
         collectionView.collectionViewLayout = layout()
         
+        collectionView.delegate = self
+        
         updateButtonTitle()
     }
 
@@ -76,5 +78,13 @@ class FocusViewController: UIViewController {
         let layout = UICollectionViewCompositionalLayout(section: section)
         
         return layout
+    }
+}
+
+extension FocusViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "QuickFocus", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "QuickFocusListViewController") as! QuickFocusListViewController
+        present(vc, animated: true)
     }
 }
